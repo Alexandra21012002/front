@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+        <title>Login</title>
+    </head>
+    <body class="bodylogin">
+    <div class="container1">
+<form role="form">
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" class="form-control" id="email" placeholder="Введите email">
+</div>
+<div class="form-group">
+<label for="password">Пароль</label>
+<input type="password" class="form-control" id="password" placeholder="Введите пароль">
+</div>
+<div class="checkbox">
+<label for="password">
+    <div class="radio">
+<label>
+<input type="radio" name="radio" value="repit">
+Репетитор
+    <div></div>
+<input type="radio" name="radio" value="stud">
+Ученик
+</label>
+</div>
+</label>
+</div>
+<!--     <input type="submit" name="submit" value="Submit" />-->
+<!--   <a href="file:///C:/Users/ПК/Documents/university/6%20семестр/верстка/repit/index.html#" class="btn">Регистрация</a>-->
+    <input type="button" id="button" class="btn btn-success" value="Регистрация">
+        </form>
+</div>
+         <script>
+            var radio=document.getElementsByName('radio');
+             for (var i=0; i<radio.length;i++){
+                 radio[i].onchange=testRadio1;
+             }   
+              function testRadio1(){
+                  if(this.value==="repit"){
+                 button.onclick = function() {
+             window.open("file:///C:/Users/ПК/Documents/university/6%20семестр/верстка/repit/index2.html#")}; 
+              }
+     if(this.value==="stud"){
+          button.onclick = function() {
+             window.open("file:///C:/Users/ПК/Documents/university/6%20семестр/верстка/repit/index.html#")};
+                                        }
+              }     
+        </script>
+        </body>
